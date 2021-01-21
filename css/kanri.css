@@ -1,0 +1,158 @@
+/* メニュー表示 */
+/* ここから */
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #290b3c;
+}
+
+li{
+	float: left;
+	border-right: 1px solid #bbbbbb;
+}
+
+li:last-child{
+	border-right: none;
+}
+
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+}
+
+li a:hover:not(.red){
+	background-color: #a9bce2;
+}
+
+.red {
+	background-color: #da3c41;
+}
+
+.red:hover{
+	background-color: #e2aaa9;
+}
+
+/* ここまで */
+
+.title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.you1{
+    text-align: right;
+    font-weight: bold;
+    color: red;
+}
+
+.you2, .you3{
+    text-align: right;
+}
+
+table{
+    width: 400px;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0px 15px;
+    font-size: 12px;
+}
+
+th, td{
+    padding: 10px;
+}
+    
+th{
+    background: #7cce7f;
+    vertical-align: middle;
+    text-align: center;
+    width: 200px;
+    overflow: visible;
+    position: relative;
+    color: #fff;
+    font-weight: normal;
+    font-size: 15px;
+}
+    
+th:after{
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #7cce7f;
+    border-width: 10px;
+    margin-top: -10px;
+}
+
+table.company th::after {
+    float: right;
+    padding: 0;
+    left: 30px;
+    top: 10px;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: relative;
+    pointer-events: none;
+    border: 10px solid transparent;
+    border-left: #7cce7f 10px solid;
+    margin-top: -10px;
+}
+    
+td {
+    background: #f8f8f8;
+    width: 200px;
+    padding-left: 40px;
+}
+
+.fix{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: white;
+    color: #2fcd35;
+    border: solid 2px #2fcd35;
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+.fix:hover {
+    background: #2fcd35;
+    color: white;
+}
+
+.outfix{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.return{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #c9c1c8;
+    border: solid 2px #c9c1c8;
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+.return:hover {
+    background: #c9c1c8;
+    color: white;
+}
+
+.outreturn{
+    padding-left: 20px;
+}

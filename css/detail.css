@@ -1,0 +1,91 @@
+/* メニュー表示 */
+/* ここから */
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #290b3c;
+}
+
+li{
+	float: left;
+	border-right: 1px solid #bbbbbb;
+}
+
+li:last-child{
+	border-right: none;
+}
+
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+}
+
+li a:hover:not(.red){
+	background-color: #a9bce2;
+}
+
+.red {
+	background-color: #da3c41;
+}
+
+.red:hover{
+	background-color: #e2aaa9;
+}
+
+/* ここまで */
+
+.title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.all{
+    border: 2px solid;
+    border-radius: 8px;
+    border-color: black;
+}
+
+.you1{
+    text-align: right;
+    font-weight: bold;
+    color: red;
+}
+
+.you2, .you3{
+    text-align: right;
+}
+
+.title2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.return{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #678aff;
+    border: solid 2px #678aff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+.return:hover {
+    background: #678aff;
+    color: white;
+}
+
+.outreturn{
+    padding-left: 20px;
+}

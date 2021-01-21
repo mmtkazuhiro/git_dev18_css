@@ -1,0 +1,214 @@
+/* メニュー表示 */
+/* ここから */
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #290b3c;
+}
+
+li{
+	float: left;
+	border-right: 1px solid #bbbbbb;
+}
+
+li:last-child{
+	border-right: none;
+}
+
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+}
+
+li a:hover:not(.red){
+	background-color: #a9bce2;
+}
+
+.red {
+	background-color: #da3c41;
+}
+
+.red:hover{
+	background-color: #e2aaa9;
+}
+
+/* ここまで */
+
+.title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+table{
+    width: 400px;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0px 15px;
+    font-size: 12px;
+}
+
+th, td{
+    padding: 10px;
+}
+    
+.log th{
+    background: #7cabce;
+    vertical-align: middle;
+    text-align: center;
+    width: 100px;
+    overflow: visible;
+    position: relative;
+    color: #fff;
+    font-weight: normal;
+    font-size: 15px;
+}
+    
+.log th:after{
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #7ca1ce;
+    border-width: 10px;
+    margin-top: -10px;
+}
+
+table.company .log th::after {
+    float: right;
+    padding: 0;
+    left: 30px;
+    top: 10px;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: relative;
+    pointer-events: none;
+    border: 10px solid transparent;
+    border-left: #7ca1ce 10px solid;
+    margin-top: -10px;
+}
+    
+td {
+    background: #f8f8f8;
+    width: 200px;
+    padding-left: 40px;
+}
+
+.login{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: white;
+    color: #347ace;
+    border: solid 2px #347ace;
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+.login:hover {
+    background: #347ace;
+    color: white;
+}
+
+.outlogin{
+    padding-top: 20px;
+    text-align: center; 
+}
+
+.resister{
+    padding-top: 30px;
+}
+
+.res{
+    background-color: rgb(159, 107, 51);
+    color: #fff;
+    border-style: none;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.res{
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: rgb(159, 107, 51);
+    border: solid 2px rgb(159, 107, 51);
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+.res:hover {
+    background:rgb(159, 107, 51);
+    color: white;
+}
+
+.resi th{
+    background: #cea67c;
+    vertical-align: middle;
+    text-align: center;
+    width: 100px;
+    overflow: visible;
+    position: relative;
+    color: #fff;
+    font-weight: normal;
+    font-size: 15px;
+}
+    
+.resi th:after{
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #cea67c;
+    border-width: 10px;
+    margin-top: -10px;
+}
+
+table.company .resi th::after {
+    float: right;
+    padding: 0;
+    left: 30px;
+    top: 10px;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: relative;
+    pointer-events: none;
+    border: 10px solid transparent;
+    border-left: #cea67c 10px solid;
+    margin-top: -10px;
+}
+
+
+.you1{
+    text-align: right;
+    font-weight: bold;
+    color: red;
+}
+
+.you2, .you3{
+    text-align: right;
+}

@@ -1,0 +1,208 @@
+/* メニュー表示 */
+/* ここから */
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #290b3c;
+}
+
+li{
+	float: left;
+	border-right: 1px solid #bbbbbb;
+}
+
+li:last-child{
+	border-right: none;
+}
+
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+}
+
+li a:hover:not(.red){
+	background-color: #a9bce2;
+}
+
+.red {
+	background-color: #da3c41;
+}
+
+.red:hover{
+	background-color: #e2aaa9;
+}
+
+/* ここまで */
+
+.title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.you1{
+    text-align: right;
+    font-weight: bold;
+    color: red;
+}
+
+.you2, .you3{
+    text-align: right;
+}
+
+
+/* view */
+/* ここから */
+.flame{
+    position: relative;
+    margin: 2em auto;
+    width: 900px;
+    padding: 25px 10px 7px;
+    border: 2px solid #00419e;
+}
+.flame .flame_title {
+    position: absolute;
+    display: inline-block;
+    top: -2px;
+    left: -2px;
+    font-size:14px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    background: #00419e;
+    color: #ffffff;
+    font-weight: bold;
+}
+.flame p {
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.naiyou{
+    display: flex;
+}
+
+.code{
+    flex: 1;
+}
+
+.exp{
+    background-color: rgb(220, 219, 228);
+    flex: 2;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+}
+
+.show{
+    padding-left: 30px;
+}
+
+/* ここまで */
+
+.howto{
+    text-align: center;
+    display: block;
+}
+
+.setumei{
+    text-align: left;
+    padding-left: 250px;
+
+    display: inline-block;
+}
+
+/* まとめて表示ボタン */
+/* ここから */
+#button_top{
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#button_top input{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+
+#button_top{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #0026ff;
+    border: solid 2px #0026ff;
+    border-radius: 3px;
+}
+  
+#button_top:hover {
+    background: #0026ff;
+    color: white;
+}
+/* ここまで */
+
+/* 表示・コピー・削除ボタン */
+/* ここから */
+
+.show{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+}
+  
+.show:hover {
+    background: #67c5ff;
+    color: white;
+}
+
+.del{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #ff9c67;
+    border: solid 2px #ff9c67;
+    border-radius: 3px;
+}
+  
+.del:hover {
+    background: #ff9c67;
+    color: white;
+}
+
+.copy{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #67ff85;
+    border: solid 2px #67ff85;
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+.copy:hover {
+    background: #67ff85;
+    color: white;
+}
+  
+/* ここまで */
